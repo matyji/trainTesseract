@@ -38,6 +38,8 @@ def listerFichiers():
 
 
 def separationData():
+    os.system(f"mkdir trainingData")
+    os.system(f"mkdir testData")
     """
     :return: sépare les fichiers .lstmf en 80% de train_data contenu dans le fichier liste_train.txt et 20% de test_data
     contenu dans le fichier liste_test.txt
