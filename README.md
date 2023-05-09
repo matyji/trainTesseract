@@ -24,7 +24,7 @@ Pour executer le script il faut passer en argument supplémentaire la fonction q
 
   #### 1) PréTraitement
   
-          -  python main.py postTraitement
+          python main.py postTraitement
               
    Cette fonction permettra de générer les matrices de textes correspondant a vos images sous format .box
    Si votre jeu de données contient déja les .box n'executer pas cette commande.
@@ -32,43 +32,43 @@ Pour executer le script il faut passer en argument supplémentaire la fonction q
 
   #### 2) Création du fichier traineddata
 
-         -   python main.py generation
+         python main.py generation
          
    Cette fonction génère les fichiers lstmf correspondant a vos .tiff et les .box créé précedemment.
 
 
-         -   python main.py lister
+         python main.py lister
          
    Cette fonction génère un fichier txt contenant tous les fichiers lstmf générés.
 
 
-          -   python main.py separationData
+          python main.py separationData
           
    Cette fonction va spliter en deux le jeux de données. 80% pour les données d'entrainements et 20% pour les données de tests.
 
-          -   python main.py extraction
+          python main.py extraction
           
    Cette fonction va extraire le fichier lstm du traineddata francais de la librairie Tesseract.
 
-          -   python main.py create
+          python main.py create
           
    Cette fonction va créer les checkpoints de notre modèle a partir du fichier lstm créé précédemment 
 
-          -   python main.py combine
+          python main.py combine
           
    Cette fonction va combiner les checkpoints entre eux afin de générer un seul traineddata
 
-          -   python main.py deplacer
+          python main.py deplacer
               
    Cette fonction va déplacer le fichier traineddata généré dans la librairie Tesseract
               
   #### 3) Evaluation
               
-          -   python main.py evalFra
+          python main.py evalFra
           
    Cette fonction va evaluer le modèle francais de base
               
-          -   python main.py evalModel
+          python main.py evalModel
           
    Cette fonction va évaluer le modèle que l'on a créé
               
