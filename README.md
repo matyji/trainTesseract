@@ -28,6 +28,7 @@ Pour executer le script il faut passer en argument supplémentaire la fonction q
               
    Cette fonction permettra de générer les matrices de textes correspondant a vos images sous format .box
    Si votre jeu de données contient déja les .box n'executer pas cette commande.
+   
    Attention !!! Vérifiez vos fichiers .box que le texte correspondent bien à celui de l'image. Pour que l'entrainement puisse être le plus efficace possible. 
 
   #### 2) Création du fichier traineddata
