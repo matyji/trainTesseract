@@ -95,6 +95,7 @@ def creationModel():
     supprime les checkpoints si il y en a dans le dossier model/
     :return: créer les checkpoints de notre nouveau modèle en affichant le taux d'erreur
     """
+    os.system(f"mkdir model")
     os.system("rm -rf ./model/*")
     os.system(f"OMP_THREAD_LIMIT=8 lstmtraining \
       --continue_from {fraLSTM} \
