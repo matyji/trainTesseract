@@ -113,6 +113,7 @@ def combineCheckpoints():
     """
     :return: combine les checkpoints entre eux afin de générer un .traineddata dans le dossier traineddatas
     """
+    os.system(f"mkdir traineddatas")
     os.system(f"lstmtraining --stop_training\
       --continue_from {modele_checkpoint} \
       --traineddata {location_traineddata} \
