@@ -18,68 +18,58 @@ Installer le depot git dans un environnement pyCharm ou en local
  
  Modifier le dossier data/ en y ajoutant votre jeu d'images sous format .tiff
  
-  3. Lancer le script
+ ## Script
 
 Pour executer le script il faut passer en argument supplémentaire la fonction que vous voulez executer. Voici les arguments existant :
 
   #### 1) PréTraitement
   
-          -   ```bash
-              python main.py postTraitement
-              ``` 
+          -  python main.py postTraitement
+              
    Cette fonction permettra de générer les matrices de textes correspondant a vos images sous format .box
    Si votre jeu de données contient déja les .box n'executer pas cette commande.
    Attention !!! Vérifiez vos fichiers .box que le texte correspondent bien à celui de l'image. Pour que l'entrainement puisse être le plus efficace possible. 
 
   #### 2) Création du fichier traineddata
 
-         -   ```bash
-              python main.py generation
-              ```
+         -   python main.py generation
+         
    Cette fonction génère les fichiers lstmf correspondant a vos .tiff et les .box créé précedemment.
 
 
-         -   ```bash
-              python main.py lister
-              ```
+         -   python main.py lister
+         
    Cette fonction génère un fichier txt contenant tous les fichiers lstmf générés.
 
 
-          -   ```bash
-              python main.py separationData
-              ```
+          -   python main.py separationData
+          
    Cette fonction va spliter en deux le jeux de données. 80% pour les données d'entrainements et 20% pour les données de tests.
 
-          -   ```bash
-              python main.py extraction
-              ```
+          -   python main.py extraction
+          
    Cette fonction va extraire le fichier lstm du traineddata francais de la librairie Tesseract.
 
-          -   ```bash
-              python main.py create
-              ```
+          -   python main.py create
+          
    Cette fonction va créer les checkpoints de notre modèle a partir du fichier lstm créé précédemment 
 
-          -   ```bash
-              python main.py combine
-              ```
+          -   python main.py combine
+          
    Cette fonction va combiner les checkpoints entre eux afin de générer un seul traineddata
 
-          -   ```bash
-              python main.py deplacer
-              ```
+          -   python main.py deplacer
+              
    Cette fonction va déplacer le fichier traineddata généré dans la librairie Tesseract
               
   #### 3) Evaluation
               
-          -   ```bash
-              python main.py evalFra
-              ```
+          -   python main.py evalFra
+          
    Cette fonction va evaluer le modèle francais de base
               
-             -   ```bash
-              python main.py evalModel
-              ```
+          -   python main.py evalModel
+          
    Cette fonction va évaluer le modèle que l'on a créé
               
               
